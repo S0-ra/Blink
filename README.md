@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🪄 Vanishio
 
-## Getting Started
+**Step into a secret space where words vanish like magic.**
 
-First, run the development server:
+Vanishio is an ephemeral chat application where conversations exist only for a moment before disappearing forever. Create temporary chat rooms, share secrets, and watch your words vanish into the void.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## ✨ Features
+
+- **🎭 Anonymous Identity** - Auto-generated Harry Potter-esque usernames for every visitor
+- **🚪 Create & Join Rooms** - Start your own secret space or join existing ones with a Room ID
+- **⏰ Self-Destructing Rooms** - All rooms automatically vanish after 10 minutes
+- **⚡ Magical Destruction** - Invoke the spell "Avada Kedavra" to instantly destroy a room
+- **🔒 Complete Privacy** - No registration, no history, no traces
+
+## 🎮 How to Use
+
+### Creating a Room
+1. Open Vanishio
+2. Click "Create Room"
+3. Share the generated Room ID with others
+4. Start chatting anonymously
+
+### Joining a Room
+1. Get a Room ID from someone
+2. Enter the Room ID
+3. Click "Join Room"
+4. You're in!
+
+### Chatting
+- Type your message and send
+- All participants see messages in real-time
+- Your auto-generated username appears with each message
+
+### Destroying a Room
+You can end a room in two ways:
+- **Automatic**: Wait 10 minutes - the room self-destructs
+- **Manual**: Click "💣 DESTROY" in the top right to instantly destroy the room or invoke the infamous killing curse `avada kedavra`
+
+## 🔮 Username Format
+
+Usernames are automatically generated in a magical Harry Potter style:
+```
+Albus-Dumbledore-x9k2
+Sirius-Black-m4p7
+Luna-Lovegood-q3n8
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛡️ Privacy & Security
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **No Data Persistence**: Messages are never stored permanently
+- **Anonymous by Default**: No accounts or personal information required
+- **Temporary Existence**: All rooms disappear after 10 minutes maximum
+- **No Recovery**: Once destroyed, rooms and messages are gone forever
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+```bash
+# Install dependencies
+npm install
 
-To learn more about Next.js, take a look at the following resources:
+# Run development server
+npm run dev
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Build for production
+npm run build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Start production server
+npm start
+```
 
-## Deploy on Vercel
+## 🧙 Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js 16** - React framework with App Router
+- **Upstash Realtime** - Real-time pub/sub messaging
+- **Upstash Redis** - Ephemeral data storage
+- **Elysia** - Fast and elegant API framework
+- **TanStack Query** - Data fetching and state management
+- **Tailwind CSS 4** - Utility-first styling
+- **TypeScript** - Type-safe development
+- **Zod** - Runtime type validation
+- **nanoid** - Unique identifier generation
+- **date-fns** - Date manipulation utilities
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## ⚠️ Important Notes
+
+- Rooms are **truly ephemeral** - no backups, no recovery
+- The 10-minute timer starts when the room is created
+- Once you leave or close the tab, you cannot rejoin the same room
+- Use responsibly and respect others' privacy
+
+## 📜 License
+
+MIT License - Use it, modify it, share it!
+
+---
+
+**Remember**: In Vanishio, nothing lasts forever. Speak freely, for your words will soon vanish like magic. ✨
