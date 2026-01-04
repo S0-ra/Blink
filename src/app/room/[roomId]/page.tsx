@@ -150,7 +150,7 @@ const Page = () => {
         <button
           onClick={() => destroyRoom()}
           className="group text-xs bg-zinc-800 hover:bg-red-600 px-3 py-1.5 rounded text-zinc-400 hover:text-white font-bold transition-all flex items-center cursor-pointer">
-          💣 BOMB
+          💣 DESTROY
         </button>
       </header>
 
